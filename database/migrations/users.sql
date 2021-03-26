@@ -21,5 +21,6 @@ CREATE TABLE IF NOT EXISTS `users` (
     `role_id` VARCHAR(50) COMMENT 'refrence: roles.id',
     `created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
     `updated_at` TIMESTAMP NULL ON UPDATE CURRENT_TIMESTAMP,
-    `deleted_at` TIMESTAMP NULL DEFAULT NULL
+    `deleted_at` TIMESTAMP NULL DEFAULT NULL,
+    `managerId` varchar(255)
 ) ENGINE=InnoDB COMMENT 'list of users';
