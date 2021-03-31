@@ -29,11 +29,12 @@ CREATE TABLE IF NOT EXISTS client_project (
 ) ENGINE=InnoDB COMMENT 'assign employee to project';
 
 CREATE TABLE IF NOT EXISTS add_tasks (
-    client varchar(255),
+    month varchar(50),
+    client varchar(100),
     project  varchar(255),
 	subProject  varchar(255),
     tasks text,
 	activity text,
-    PRIMARY KEY (client,project,subProject)
+    PRIMARY KEY (client,project,subProject,month)
 ) ENGINE=InnoDB COMMENT 'add task to project';
 
